@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background1"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/addTaskHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Add Task"
+        android:textAlignment="center"
+        android:textColor="#012F43"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="56dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/addTaskHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/baseline_done_all_24" />
+
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addTaskHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter the Task"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="385dp"
+        android:layout_height="525dp"
+        android:layout_below="@+id/titleEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/blue_border"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter the date\n\n\nEnter the description about your task\n\nEnter the progress (complete, on-going, have to do)"
+        android:padding="12dp"
+        android:textColorLink="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="16dp"
+        android:background="#0B0A0A"
+        android:backgroundTint="#F2AC68"
+        android:src="@drawable/baseline_arrow_back_24" />
+</RelativeLayout>

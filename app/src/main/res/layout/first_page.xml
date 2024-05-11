@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context=".StartActivity">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="serif"
+        android:text="TASK GENIUS"
+        android:textColor="#C4100D0D"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="383dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#58F5D4"
+        android:textSize="20sp"
+        android:text="Lets Start" />
+
+</RelativeLayout>
